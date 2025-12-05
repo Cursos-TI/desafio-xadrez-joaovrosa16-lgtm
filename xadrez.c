@@ -8,10 +8,10 @@ printf("Escolha  uma peça\n");
 scanf("%d",&peça);
 
 switch(peça){
-// codigo referente a mocimentação da torre
+// codigo referente a movimentação da torre
     case 1:
     printf("Você escolheu a torre\n");
-    while (movimento == 0)
+    while (movimento <= 5)
     {
         printf("torre andou para a direita\n");
         movimento ++;
@@ -22,11 +22,15 @@ switch(peça){
     case 2:
     printf("Você escolheu o bispo\n");
     do {printf("bispo ando para cima,direita\n");
-    }while(movimento == 0);
+        movimento ++;
+    }while(movimento <=5);
     break;
 
+    //// codigo referente a movimentação da rainha
     default:
     printf("você escolheu a rainha\n");
+    for(movimento = 0;movimento <= 8;movimento ++)
+    {printf("rainha andou 8 casas para a esquerda\n");}
     break;
 }
 printf("\n");
