@@ -26,7 +26,22 @@ switch(peça){
     }while(movimento <=5);
     break;
 
-    //// codigo referente a movimentação da rainha
+    // codigo referent a movimentação do cavalo
+    case 3:
+    printf("Você escolheu o cavalo\n");
+    int movimentodocavalo;
+    
+    for(movimentodocavalo = 0 ;movimentodocavalo <=2; movimentodocavalo++)
+    {
+        for(movimentodocavalo = 0 ; movimentodocavalo < 2; movimentodocavalo ++)
+        {
+            printf("cavalo andou para a cima\n");
+        }
+        printf("cavalo andou para a esquerda\n");
+    }
+    break;
+
+    // codigo referente a movimentação da rainha
     default:
     printf("você escolheu a rainha\n");
     for(movimento = 0;movimento <= 8;movimento ++)
