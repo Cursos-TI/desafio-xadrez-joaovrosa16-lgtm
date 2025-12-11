@@ -11,7 +11,8 @@ void movertorre(int casas){
 //recursiva com repetição aninhada referente ao bispo
 void moverbispo(int casas){
     for(casas; casas > 0;casas -- )
-    {for (casas; casas >0;casas --)
+    {int casas2 = 1;
+        for (casas2; casas2 >0;casas2 --)
         {
             printf("Cima\n");
         }
